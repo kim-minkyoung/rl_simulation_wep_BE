@@ -17,7 +17,6 @@
 - 팀원의 경우 생성되어 있는 팀에 참가해주세요. <br/>
   팀에 참가하지 않았을 경우, 레포지토리에 대한 권한이 없어 PR 및 commit이 막힐 수 있습니다.
   <img width="600" alt="classroom에서 팀 참여 그림" src="https://github.com/user-attachments/assets/86f084f0-8623-40ed-b6d5-4e307ee8478b">
-
 <br/>
 
 
