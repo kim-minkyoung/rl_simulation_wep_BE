@@ -29,6 +29,10 @@ dependencies {
     // PostgreSQL Driver
     runtimeOnly 'org.postgresql:postgresql'
 
+    //spring-security crypto
+    implementation 'org.springframework.security:spring-security-crypto:5.7.6'
+
+
 }
 
 tasks.named('test') {

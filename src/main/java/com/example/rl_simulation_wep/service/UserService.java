@@ -5,7 +5,9 @@ import com.example.rl_simulation_wep.entity.User;
 import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
 
 import java.util.Optional;
 
@@ -14,6 +16,9 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public UserDTO createUser(UserDTO userDTO) {
         User user = convertToEntity(userDTO);
@@ -42,7 +47,7 @@ public class UserService {
         User user = new User();
         user.setEmail(dto.getEmail());
         user.setUserName(dto.getUserName());
-        user.setUserPassword(dto.getPassword());
+        user.setUserPassword(dto.encodingPassword(passwordEncoder));
         user.setUserImage(dto.getUserImage());
         user.setUserGender(Gender.valueOf(dto.getUserGender()));
         user.setBirthDate(dto.getBirthDate());

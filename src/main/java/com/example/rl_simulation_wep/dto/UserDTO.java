@@ -1,5 +1,8 @@
 package com.example.rl_simulation_wep.dto;
 
+import io.micrometer.common.util.StringUtils;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 import java.time.LocalDate;
 
 public class UserDTO {
@@ -29,6 +32,14 @@ public class UserDTO {
     }
 
     public String getPassword() {
+        return password;
+    }
+
+    public String encodingPassword(PasswordEncoder passwordEncoder) {
+        if (StringUtils.isEmpty(password)) {
+            return null;
+        }
+        password = passwordEncoder.encode(password);
         return password;
     }
 
