@@ -11,7 +11,7 @@ public class RlSimulationWepApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return System.getenv("docker-app");
     }
 
     public static void main(String[] args) {
