@@ -11,7 +11,7 @@ public class RlSimulationWepApplication {
 
     @RequestMapping("/")
     String home() {
-        return "Hello World!";
+        return "hello world";
     }
 
     public static void main(String[] args) {
