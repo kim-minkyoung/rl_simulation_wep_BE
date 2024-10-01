@@ -31,7 +31,7 @@ dependencies {
 
     //spring-security crypto
     implementation 'org.springframework.security:spring-security-crypto:5.7.6'
-
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 
 }
 

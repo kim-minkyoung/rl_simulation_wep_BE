@@ -9,7 +9,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class UserService {
@@ -25,6 +27,11 @@ public class UserService {
         user.setUserPassword(passwordEncoder.encode(rawPassword));
         userRepository.save(user);
         return convertToDTO(user);
+    }
+
+    public List<UserDTO> getAllUsers() {
+        List<User> users = userRepository.findAllByOrderByUserScoreDesc();
+        return users.stream().map(this::convertToDTO).collect(Collectors.toList());
     }
 
     public UserDTO getUserById(Long userId) {
