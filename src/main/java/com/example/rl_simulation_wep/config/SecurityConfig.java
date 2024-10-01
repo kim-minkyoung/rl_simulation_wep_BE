@@ -31,6 +31,18 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
+    public class AuthenticatedMatchers {
+        public static final String[] swaggerArray = {
+                "/api-docs",
+                "/swagger-ui-custom.html",
+                "/v3/api-docs/**",
+                "/swagger-ui/**",
+                "/api-docs/**",
+                "/swagger-ui.html",
+                "/swagger-custom-ui.html"
+        };
+    }
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
@@ -40,6 +52,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/users/{userId}").permitAll() // GET /users/{userId} 허용
                         .requestMatchers("/login").permitAll() // 로그인 페이지 허용
                         .requestMatchers("/").permitAll()
+                        .requestMatchers(AuthenticatedMatchers.swaggerArray).permitAll()
                         .anyRequest().authenticated() // 나머지 요청은 인증 필요
                 )
                 .formLogin(form -> form
