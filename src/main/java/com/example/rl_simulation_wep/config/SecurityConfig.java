@@ -31,7 +31,7 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    public class AuthenticatedMatchers {
+    public static class AuthenticatedMatchers {
         public static final String[] swaggerArray = {
                 "/api-docs",
                 "/swagger-ui-custom.html",
