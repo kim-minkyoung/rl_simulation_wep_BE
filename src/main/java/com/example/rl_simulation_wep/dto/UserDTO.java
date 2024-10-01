@@ -8,11 +8,11 @@ import java.time.LocalDate;
 public class UserDTO {
     private String email;
     private String userName;
-    private String password;
     private String userImage;
     private String userGender;
     private LocalDate birthDate;
     private String userBio;
+    private Integer userScore;
 
     // Getters and Setters
     public String getEmail() {
@@ -29,22 +29,6 @@ public class UserDTO {
 
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public String encodingPassword(PasswordEncoder passwordEncoder) {
-        if (StringUtils.isEmpty(password)) {
-            return null;
-        }
-        password = passwordEncoder.encode(password);
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getUserImage() {
@@ -77,5 +61,13 @@ public class UserDTO {
 
     public void setUserBio(String userBio) {
         this.userBio = userBio;
+    }
+
+    public Integer getUserScore() {
+        return userScore;
+    }
+
+    public void setUserScore(Integer userScore) {
+        this.userScore = userScore;
     }
 }

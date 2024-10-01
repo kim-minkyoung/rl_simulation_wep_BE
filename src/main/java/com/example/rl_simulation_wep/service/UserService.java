@@ -20,8 +20,9 @@ public class UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public UserDTO createUser(UserDTO userDTO) {
+    public UserDTO createUser(UserDTO userDTO, String rawPassword) { // 비밀번호는 별도로 받아 처리
         User user = convertToEntity(userDTO);
+        user.setUserPassword(passwordEncoder.encode(rawPassword));
         userRepository.save(user);
         return convertToDTO(user);
     }
@@ -35,19 +36,18 @@ public class UserService {
         UserDTO dto = new UserDTO();
         dto.setEmail(user.getEmail());
         dto.setUserName(user.getUserName());
-        dto.setPassword(user.getPassword());
         dto.setUserImage(user.getUserImage());
         dto.setUserGender(user.getUserGender().name());
         dto.setBirthDate(user.getBirthDate());
         dto.setUserBio(user.getUserBio());
-        return dto;
+        dto.setUserScore(user.getUserScore());
+        return dto; // 비밀번호는 포함하지 않음
     }
 
     private User convertToEntity(UserDTO dto) {
         User user = new User();
         user.setEmail(dto.getEmail());
         user.setUserName(dto.getUserName());
-        user.setUserPassword(dto.encodingPassword(passwordEncoder));
         user.setUserImage(dto.getUserImage());
         user.setUserGender(Gender.valueOf(dto.getUserGender()));
         user.setBirthDate(dto.getBirthDate());
