@@ -1,5 +1,6 @@
 package com.example.rl_simulation_wep.repository;
 
+import com.example.rl_simulation_wep.dto.UserDTO;
 import com.example.rl_simulation_wep.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

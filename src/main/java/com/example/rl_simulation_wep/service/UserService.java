@@ -65,7 +65,7 @@ public class UserService {
         return false;
     }
 
-    UserDTO convertToDTO(User user) {
+    public UserDTO convertToDTO(User user) {
         UserDTO dto = new UserDTO();
         dto.setUserId(user.getUserId());
         dto.setEmail(user.getEmail());

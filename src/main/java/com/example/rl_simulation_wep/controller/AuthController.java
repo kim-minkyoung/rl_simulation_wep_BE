@@ -5,6 +5,8 @@ import com.example.rl_simulation_wep.dto.JwtResponseDTO;
 import com.example.rl_simulation_wep.dto.SignupResponseDTO;
 import com.example.rl_simulation_wep.dto.UserCreationRequest; // 사용자 생성 요청 DTO
 import com.example.rl_simulation_wep.dto.UserDTO; // 사용자 DTO
+import com.example.rl_simulation_wep.entity.User;
+import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.service.AuthService;
 import com.example.rl_simulation_wep.service.UserService; // 사용자 서비스
 import io.swagger.v3.oas.annotations.media.Content;
@@ -26,22 +28,31 @@ public class AuthController {
     private final UserService userService; // 사용자 서비스 추가
     private final AuthService authService;
     private final JwtTokenUtil jwtTokenUtil;
+    private final UserRepository userRepository;
 
-    public AuthController(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, UserDetailsService userDetailsService, UserService userService, AuthService authService, JwtTokenUtil jwtTokenUtil1) {
+    public AuthController(AuthenticationManager authenticationManager, JwtTokenUtil jwtTokenUtil, UserDetailsService userDetailsService, UserService userService, AuthService authService, JwtTokenUtil jwtTokenUtil1, UserRepository userRepository) {
         this.userService = userService; // 사용자 서비스 초기화
         this.authService = authService;
         this.jwtTokenUtil = jwtTokenUtil1;
+        this.userRepository = userRepository;
     }
 
     @PostMapping("/login")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "로그인 성공", content = @Content(mediaType = "application/json",
-                    schema = @Schema(implementation = JwtResponseDTO.class))),
+                    schema = @Schema(implementation = SignupResponseDTO.class))),
             @ApiResponse(responseCode = "403", description = "로그인 아이디/비밀번호 오류", content = @Content(mediaType = ""))
     })
-    public ResponseEntity<JwtResponseDTO> login(@RequestParam String email, @RequestParam String password) {
-        JwtResponseDTO response = authService.login(email, password);
-        return ResponseEntity.ok(response); // JSON 형식으로 JWT 반환
+    public ResponseEntity<Map<String, Object>> login(@RequestParam String email, @RequestParam String password) {
+        User user = userRepository.findByEmail(email);
+        String token = authService.login(user.getUserId(), password).getJwtToken();
+
+        UserDTO userDTO = userService.convertToDTO(user);
+        Map<String, Object> response = new HashMap<>();
+        response.put("userDTO", userDTO);
+        response.put("token", token);
+
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/signup")
