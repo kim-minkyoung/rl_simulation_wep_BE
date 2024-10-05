@@ -5,7 +5,6 @@ import com.example.rl_simulation_wep.entity.User;
 import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
@@ -19,16 +18,6 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
-    public UserDTO createUser(UserDTO userDTO, String rawPassword) { // 비밀번호는 별도로 받아 처리
-        User user = convertToEntity(userDTO);
-        user.setUserPassword(passwordEncoder.encode(rawPassword));
-        userRepository.save(user);
-        return convertToDTO(user);
-    }
-
     public List<UserDTO> getAllUsers() {
         List<User> users = userRepository.findAllByOrderByUserScoreDesc();
         return users.stream().map(this::convertToDTO).collect(Collectors.toList());
@@ -39,7 +28,7 @@ public class UserService {
         return user.map(this::convertToDTO).orElse(null);
     }
 
-    private UserDTO convertToDTO(User user) {
+    UserDTO convertToDTO(User user) {
         UserDTO dto = new UserDTO();
         dto.setEmail(user.getEmail());
         dto.setUserName(user.getUserName());
@@ -51,7 +40,7 @@ public class UserService {
         return dto; // 비밀번호는 포함하지 않음
     }
 
-    private User convertToEntity(UserDTO dto) {
+    User convertToEntity(UserDTO dto) {
         User user = new User();
         user.setEmail(dto.getEmail());
         user.setUserName(dto.getUserName());
@@ -60,5 +49,9 @@ public class UserService {
         user.setBirthDate(dto.getBirthDate());
         user.setUserBio(dto.getUserBio());
         return user;
+    }
+
+    public boolean existsByEmail(String email) {
+        return userRepository.existsByEmail(email);
     }
 }

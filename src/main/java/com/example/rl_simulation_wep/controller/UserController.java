@@ -5,6 +5,8 @@ import com.example.rl_simulation_wep.dto.UserDTO;
 import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -22,31 +24,14 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @PostMapping
-    @Operation(summary = "회원가입")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "회원가입 성공",
-                    content = @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = UserDTO.class))),
-            @ApiResponse(responseCode = "400", description = "이메일이 이미 존재합니다.")
-    })
-    public ResponseEntity<?> createUser(@RequestBody UserCreationRequest userCreationRequest) {
-        UserDTO userDTO = userCreationRequest.getUserDTO();
-        String rawPassword = userCreationRequest.getPassword();
-
-        if (userRepository.existsByEmail(userDTO.getEmail())) {
-            return ResponseEntity.badRequest().body("이메일이 이미 존재합니다.");
-        }
-
-        UserDTO createdUser = userService.createUser(userDTO, rawPassword);
-        return ResponseEntity.ok(createdUser);
-    }
-
     @GetMapping
-    @Operation(summary = "모든 사용자 점수 내림차순으로 조회(랭킹)")
+    @Operation(
+            summary = "모든 사용자 점수 내림차순으로 조회(랭킹)",
+            description = "JWT token 을 header로 전달해야 함(인증 필요)",
+            parameters = {
+                    @Parameter(name = "Authorization", description = "value 예시) Bearer 8Kvpdkbihakvis", required = true, in = ParameterIn.HEADER)
+            }
+    )
     public ResponseEntity<List<UserDTO>> getAllUsers() {
         List<UserDTO> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
