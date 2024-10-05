@@ -28,6 +28,43 @@ public class UserService {
         return user.map(this::convertToDTO).orElse(null);
     }
 
+    public UserDTO updateUser(Long userId, UserDTO userDTO) {
+        Optional<User> userOptional = userRepository.findById(userId);
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+
+            // userDTO의 각 필드를 체크하고 null이 아닐 경우에만 업데이트
+            if (userDTO.getUserName() != null) {
+                user.setUserName(userDTO.getUserName());
+            }
+            if (userDTO.getUserImage() != null) {
+                user.setUserImage(userDTO.getUserImage());
+            }
+            if (userDTO.getUserGender() != null) {
+                user.setUserGender(Gender.valueOf(userDTO.getUserGender()));
+            }
+            if (userDTO.getUserBio() != null) {
+                user.setUserBio(userDTO.getUserBio());
+            }
+            if (userDTO.getUserScore() != null) {
+                user.setUserScore(userDTO.getUserScore());
+            }
+
+            // 수정된 사용자 저장
+            userRepository.save(user);
+            return convertToDTO(user); // 수정된 사용자 DTO 반환
+        }
+        return null; // 사용자가 존재하지 않을 경우 null 반환
+    }
+
+    public boolean deleteUser(Long id) {
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+
     UserDTO convertToDTO(User user) {
         UserDTO dto = new UserDTO();
         dto.setUserId(user.getUserId());
