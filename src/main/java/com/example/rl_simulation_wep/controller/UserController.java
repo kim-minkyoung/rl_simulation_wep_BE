@@ -6,6 +6,10 @@ import com.example.rl_simulation_wep.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,6 +49,12 @@ public class UserController {
                     @Parameter(name = "Authorization", description = "value 예시) Bearer 8Kvpdkbihakvis", required = true, in = ParameterIn.HEADER)
             }
     )
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "사용자 정보 업데이트 성공", content = @Content(mediaType = "application/json",
+                    schema = @Schema(implementation = UserDTO.class))),
+            @ApiResponse(responseCode = "403", description = "수정할 자격이 없는 토큰 (Forbidden)", content = @Content(mediaType = "application/json")),
+            @ApiResponse(responseCode = "404", description = "사용자를 찾을 수 없음 (Not Found)", content = @Content(mediaType = "application/json"))
+    })
     public ResponseEntity<UserDTO> updateUser(@PathVariable Long userId, @RequestBody UserDTO userDTO, @RequestHeader("Authorization") String authorizationHeader) {
         String token = authorizationHeader.replace("Bearer ", "");
         Long authenticatedUserId = Long.valueOf(JwtTokenUtil.extractUserId(token));

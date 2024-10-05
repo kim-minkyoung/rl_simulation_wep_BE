@@ -44,6 +44,10 @@ dependencies {
     //dotenv
     implementation 'io.github.cdimascio:dotenv-java:2.2.0'
 
+    //lombok
+    compileOnly 'org.projectlombok:lombok:1.18.28' // 최신 버전으로 변경 가능
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
 }
 
 tasks.named('test') {
