@@ -34,8 +34,10 @@ public class AuthService {
     }
 
     public JwtResponseDTO login(String email, String password) {
+        User user = userRepository.findByEmail(email);
+        Long userId = user.getUserId();
         Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(email, password)
+                new UsernamePasswordAuthenticationToken(userId, password)
         );
 
         CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
