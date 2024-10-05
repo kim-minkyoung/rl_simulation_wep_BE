@@ -80,7 +80,20 @@ public class UserController {
                     @Parameter(name = "Authorization", description = "value 예시) Bearer 8Kvpdkbihakvis", required = true, in = ParameterIn.HEADER)
             }
     )
-    public ResponseEntity<Void> deleteUser(@PathVariable Long userId) {
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "탈퇴 성공"),
+            @ApiResponse(responseCode = "403", description = "수정할 자격이 없는 토큰 (Forbidden)"),
+            @ApiResponse(responseCode = "404", description = "사용자를 찾을 수 없음 (Not Found)")
+    })
+    public ResponseEntity<Void> deleteUser(@PathVariable Long userId, @RequestHeader("Authorization") String authorizationHeader) {
+        String token = authorizationHeader.replace("Bearer ", "");
+        Long authenticatedUserId = Long.valueOf(JwtTokenUtil.extractUserId(token));
+
+        // 요청된 userId와 로그인한 사용자의 ID가 같은지 확인
+        if (!authenticatedUserId.equals(userId)) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null); // 403 Forbidden
+        }
+
         boolean isDeleted = userService.deleteUser(userId);
         if (isDeleted) {
             return ResponseEntity.noContent().build(); // 204 No Content
