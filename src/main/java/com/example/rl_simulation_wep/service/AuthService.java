@@ -1,5 +1,6 @@
 package com.example.rl_simulation_wep.service;
 
+import com.example.rl_simulation_wep.config.CustomUserDetails;
 import com.example.rl_simulation_wep.config.JwtTokenUtil;
 import com.example.rl_simulation_wep.dto.JwtResponseDTO;
 import com.example.rl_simulation_wep.dto.UserDTO;
@@ -9,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -38,8 +38,8 @@ public class AuthService {
                 new UsernamePasswordAuthenticationToken(email, password)
         );
 
-        UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        String jwt = jwtTokenUtil.generateToken(userDetails.getUsername());
+        CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
+        String jwt = jwtTokenUtil.generateToken(userDetails.getUserId());
 
         return new JwtResponseDTO(jwt);
     }

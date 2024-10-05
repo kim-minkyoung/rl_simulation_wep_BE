@@ -19,11 +19,11 @@ import java.io.IOException;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtTokenUtil jwtTokenUtil;
-    private final UserDetailsService userDetailsService;
+    private final CustomUserDetailsService customUserDetailsService;
 
-    public JwtAuthenticationFilter(JwtTokenUtil jwtTokenUtil, UserDetailsService userDetailsService) {
+    public JwtAuthenticationFilter(JwtTokenUtil jwtTokenUtil, CustomUserDetailsService customUserDetailsService) {
         this.jwtTokenUtil = jwtTokenUtil;
-        this.userDetailsService = userDetailsService;
+        this.customUserDetailsService = customUserDetailsService;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             throws IOException, ServletException {
         final String authorizationHeader = request.getHeader("Authorization");
 
-        String email = null;
+        Long userId = null;
         String jwt = null;
 
         // Authorization 헤더가 있는지 로그
@@ -42,8 +42,8 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             System.out.println("Extracted JWT: " + jwt);
 
             try {
-                email = jwtTokenUtil.extractEmail(jwt);
-                System.out.println("Extracted email: " + email);
+                userId = Long.valueOf(jwtTokenUtil.extractUserId(jwt));
+                System.out.println("Extracted userId: " + userId);
             } catch (ExpiredJwtException e) {
                 // 토큰 만료 처리
                 response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Token has expired.");
@@ -59,9 +59,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             System.out.println("No JWT token found.");
         }
 
-        if (email != null && SecurityContextHolder.getContext().getAuthentication() == null) {
-            UserDetails userDetails = this.userDetailsService.loadUserByUsername(email);
-            System.out.println("Loaded user details for email: " + email);
+        if (userId != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+            CustomUserDetails userDetails = (CustomUserDetails) this.customUserDetailsService.loadUserByUsername(String.valueOf(userId));
+            System.out.println("Loaded user details for email: " + userId);
 
             if (!jwtTokenUtil.isTokenExpired(jwt)) {
                 UsernamePasswordAuthenticationToken authenticationToken =

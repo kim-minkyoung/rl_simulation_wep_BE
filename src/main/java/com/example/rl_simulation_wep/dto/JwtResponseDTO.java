@@ -1,17 +1,17 @@
 package com.example.rl_simulation_wep.dto;
 
 public class JwtResponseDTO {
-    private String jwt;
+    private String jwtToken;
 
-    public JwtResponseDTO(String jwt) {
-        this.jwt = jwt;
+    public JwtResponseDTO(String jwtToken) {
+        this.jwtToken = jwtToken;
     }
 
-    public String getJwt() {
-        return jwt;
+    public String getJwtToken() {
+        return jwtToken;
     }
 
-    public void setJwt(String jwt) {
-        this.jwt = jwt;
+    public void setJwtToken(String jwtToken) {
+        this.jwtToken = jwtToken;
     }
 }

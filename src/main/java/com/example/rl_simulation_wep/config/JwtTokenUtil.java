@@ -27,30 +27,22 @@ public class JwtTokenUtil {
         SECRET_KEY = Keys.hmacShaKeyFor(secretKeyValue.getBytes()); // SecretKey 생성
     }
 
-    public String generateToken(String email) {
+    public String generateToken(Long userId) {
         Map<String, Object> claims = new HashMap<>();
         return Jwts.builder()
                 .setClaims(claims)
-                .setSubject(email)
+                .setSubject(String.valueOf(userId))
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .signWith(SignatureAlgorithm.HS512, SECRET_KEY)
                 .compact();
     }
 
-    public String extractEmail(String token) {
+    public static String extractUserId(String token) {
         return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody().getSubject();
     }
 
     public boolean isTokenExpired(String token) {
         return Jwts.parser().setSigningKey(SECRET_KEY).parseClaimsJws(token).getBody().getExpiration().before(new Date());
-    }
-
-    public static Long getUserIdFromToken(String token) {
-        Claims claims = Jwts.parser()
-                .setSigningKey(SECRET_KEY)
-                .parseClaimsJws(token)
-                .getBody();
-        return Long.valueOf(claims.get("userId").toString());
     }
 }

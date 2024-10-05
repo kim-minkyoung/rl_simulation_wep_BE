@@ -46,20 +46,20 @@ public class UserController {
             }
     )
     public ResponseEntity<UserDTO> updateUser(@PathVariable Long userId, @RequestBody UserDTO userDTO, @RequestHeader("Authorization") String authorizationHeader) {
-        //TODO
-//        String token = authorizationHeader.replace("Bearer ", "");
-//        Long authenticatedUserId = JwtTokenUtil.getUserIdFromToken(token);
-//
-//        // 요청된 userId와 로그인한 사용자의 ID가 같은지 확인
-//        if (!authenticatedUserId.equals(userId)) {
-//            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null); // 403 Forbidden
-//        }
+        String token = authorizationHeader.replace("Bearer ", "");
+        Long authenticatedUserId = Long.valueOf(JwtTokenUtil.extractUserId(token));
+
+        // 요청된 userId와 로그인한 사용자의 ID가 같은지 확인
+        if (!authenticatedUserId.equals(userId)) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null); // 403 Forbidden
+        }
 
         UserDTO updatedUser = userService.updateUser(userId, userDTO);
         if (updatedUser != null) {
             return ResponseEntity.ok(updatedUser); // 200 OK
         } else {
             return ResponseEntity.notFound().build(); // 404 Not Found
+
         }
     }
 
