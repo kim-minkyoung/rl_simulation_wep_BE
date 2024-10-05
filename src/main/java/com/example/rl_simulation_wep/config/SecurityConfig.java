@@ -57,6 +57,11 @@ public class SecurityConfig {
                 "/swagger-ui.html",
                 "/swagger-custom-ui.html"
         };
+        public static final String[] permitArray = {
+                "/users", "/users/*",
+                "/posts", "/posts/*",
+                "/comments", "/comments/*"
+        };
     }
 
     @Bean
@@ -65,6 +70,7 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable) // CSRF 보호 비활성화
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/auth/login", "/auth/signup", "/").permitAll()
+                        .requestMatchers(HttpMethod.GET, AuthenticatedMatchers.permitArray).permitAll()
                         .requestMatchers(AuthenticatedMatchers.swaggerArray).permitAll()
                         .anyRequest().authenticated()
                 )

@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import java.time.LocalDate;
 
 public class UserDTO {
+    private Long userId;
     private String email;
     private String userName;
     private String userImage;
@@ -15,6 +16,15 @@ public class UserDTO {
     private Integer userScore;
 
     // Getters and Setters
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
     public String getEmail() {
         return email;
     }

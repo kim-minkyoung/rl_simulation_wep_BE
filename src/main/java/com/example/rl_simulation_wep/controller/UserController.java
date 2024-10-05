@@ -1,16 +1,8 @@
 package com.example.rl_simulation_wep.controller;
 
-import com.example.rl_simulation_wep.dto.UserCreationRequest;
 import com.example.rl_simulation_wep.dto.UserDTO;
-import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.enums.ParameterIn;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,13 +17,7 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
-    @Operation(
-            summary = "모든 사용자 점수 내림차순으로 조회(랭킹)",
-            description = "JWT token 을 header로 전달해야 함(인증 필요)",
-            parameters = {
-                    @Parameter(name = "Authorization", description = "value 예시) Bearer 8Kvpdkbihakvis", required = true, in = ParameterIn.HEADER)
-            }
-    )
+    @Operation(summary = "모든 사용자 점수 내림차순으로 조회(랭킹)")
     public ResponseEntity<List<UserDTO>> getAllUsers() {
         List<UserDTO> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
@@ -48,3 +34,8 @@ public class UserController {
         }
     }
 }
+
+//description = "JWT token 을 header로 전달해야 함(인증 필요)",
+//parameters = {
+//@Parameter(name = "Authorization", description = "value 예시) Bearer 8Kvpdkbihakvis", required = true, in = ParameterIn.HEADER)
+//            }

@@ -30,6 +30,7 @@ public class UserService {
 
     UserDTO convertToDTO(User user) {
         UserDTO dto = new UserDTO();
+        dto.setUserId(user.getUserId());
         dto.setEmail(user.getEmail());
         dto.setUserName(user.getUserName());
         dto.setUserImage(user.getUserImage());
@@ -42,6 +43,7 @@ public class UserService {
 
     User convertToEntity(UserDTO dto) {
         User user = new User();
+        user.setUserId(dto.getUserId());
         user.setEmail(dto.getEmail());
         user.setUserName(dto.getUserName());
         user.setUserImage(dto.getUserImage());
