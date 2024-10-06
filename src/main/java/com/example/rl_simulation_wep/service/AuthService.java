@@ -46,7 +46,7 @@ public class AuthService {
 
     public UserDTO createUser(UserDTO userDTO, String rawPassword) {
         User user = userService.convertToEntity(userDTO);
-        user.setUserPassword(passwordEncoder.encode(rawPassword));
+        user.setPassword(passwordEncoder.encode(rawPassword));
         userRepository.save(user);
         return userService.convertToDTO(user);
     }
