@@ -26,7 +26,10 @@ public class PostController {
     private PostService postService;
 
     @GetMapping("/{boardId}")
-    @Operation(summary = "게시판의 게시물 목록 조회 (페이지네이션, 정렬)")
+    @Operation(
+            summary = "게시판의 게시물 목록 조회 (페이지네이션, 정렬)",
+            description = "limit×(page-1)+1 이상 limit×page 이하의 게시글들 GET, sort는 likes(좋아요 많은 순) 또는 dates(최신순) (예시: /posts/1?page=1&limit=3&sort=likes)"
+    )
     public ResponseEntity<List<PostDTO>> getPostsByBoardId(
             @PathVariable Long boardId,
             @RequestParam int page,
