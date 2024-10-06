@@ -112,7 +112,7 @@ public class PostService {
         PostDTO dto = new PostDTO();
         dto.setPostId(post.getPostId());
         dto.setBoardId(post.getBoardId().getBoardId());
-        dto.setUserId(post.getUserId().getUserId());
+        dto.setUserName(post.getUserId().getUserName());
         dto.setPostTitle(post.getPostTitle());
         dto.setPostContent(post.getPostContent());
         return dto;

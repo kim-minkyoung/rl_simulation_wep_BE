@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 public class PostDTO {
     private Long postId;
-    private Long userId;
+    private String userName;
     private Long boardId;
     private String postTitle;
     private String postContent;
