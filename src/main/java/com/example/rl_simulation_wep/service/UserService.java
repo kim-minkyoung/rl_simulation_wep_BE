@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -49,6 +50,8 @@ public class UserService {
             if (userDTO.getUserScore() != null) {
                 user.setUserScore(userDTO.getUserScore());
             }
+
+            user.setUserLastLogin(LocalDateTime.now());
 
             // 수정된 사용자 저장
             userRepository.save(user);

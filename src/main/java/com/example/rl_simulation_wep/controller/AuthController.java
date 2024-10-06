@@ -9,6 +9,7 @@ import com.example.rl_simulation_wep.entity.User;
 import com.example.rl_simulation_wep.repository.UserRepository;
 import com.example.rl_simulation_wep.service.AuthService;
 import com.example.rl_simulation_wep.service.UserService; // 사용자 서비스
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -56,6 +57,7 @@ public class AuthController {
     }
 
     @PostMapping("/signup")
+    @Operation(description = "필독!!! userID 빼고 email부터 보내면 됨")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "회원가입 성공",
                     content = @Content(mediaType = "application/json", schema = @Schema(implementation = SignupResponseDTO.class))),
@@ -72,7 +74,7 @@ public class AuthController {
 
         // 사용자 생성
         UserDTO createdUser = authService.createUser(userDTO, rawPassword);
-        String token = jwtTokenUtil.generateToken(userDTO.getUserId());
+        String token = authService.login(createdUser.getUserId(), rawPassword).getJwtToken();
 
         Map<String, Object> response = new HashMap<>();
         response.put("user", createdUser);

@@ -42,7 +42,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             System.out.println("Extracted JWT: " + jwt);
 
             try {
-                userId = Long.valueOf(jwtTokenUtil.extractUserId(jwt));
+                userId = Long.valueOf(JwtTokenUtil.extractUserId(jwt));
                 System.out.println("Extracted userId: " + userId);
             } catch (ExpiredJwtException e) {
                 // 토큰 만료 처리
