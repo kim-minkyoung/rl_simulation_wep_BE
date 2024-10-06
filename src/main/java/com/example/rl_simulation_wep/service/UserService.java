@@ -51,7 +51,7 @@ public class UserService {
                 user.setUserScore(userDTO.getUserScore());
             }
 
-            user.setUserLastLogin(LocalDateTime.now());
+            user.setUserUpdatedAt(LocalDateTime.now());
 
             // 수정된 사용자 저장
             userRepository.save(user);

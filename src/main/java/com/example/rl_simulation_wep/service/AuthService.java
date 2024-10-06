@@ -13,6 +13,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.Optional;
+
 @Service
 public class AuthService {
 
@@ -41,6 +44,12 @@ public class AuthService {
         CustomUserDetails userDetails = (CustomUserDetails) authentication.getPrincipal();
         String jwt = jwtTokenUtil.generateToken(userDetails.getUserId());
 
+        Optional<User> userOptional = userRepository.findById(userDetails.getUserId());
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+            user.setUserLastLogin(LocalDateTime.now());
+            userRepository.save(user);
+        }
         return new JwtResponseDTO(jwt);
     }
 
