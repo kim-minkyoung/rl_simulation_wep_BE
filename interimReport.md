@@ -4,7 +4,7 @@
 
 Next Js에서 TS,AppRouter,Tailwind를 기반으로 제작
 
-![스크린샷 2024-11-03 오전 7.56.39.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/1a708873-65a1-4981-8772-2c95104a20de/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png)
+![스크린샷 2024-11-03 오전 7.56.39.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/1a708873-65a1-4981-8772-2c95104a20de/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png](https://img.notionusercontent.com/s3/prod-files-secure%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2F1a708873-65a1-4981-8772-2c95104a20de%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png/size/w=1420?exp=1730675244&sig=5wMs2I5zqGZkmybK4TCfW9dNwjQFIEeGUR0FNNL3rcw))
 
 <aside>
 💡
@@ -28,7 +28,7 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 추후 유니티 연동 예정
 
-![스크린샷 2024-11-03 오전 7.58.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/69a690f0-e322-4cb7-bc8e-34437670bfab/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.58.37.png)
+![스크린샷 2024-11-03 오전 7.58.37.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/69a690f0-e322-4cb7-bc8e-34437670bfab/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.58.37.png](https://chill-cookie-52f.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2F9a1da675-7de8-465a-8dfc-c0ba7a0558d0%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-11-03_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_7.58.11.png?table=block&id=030a1f11-76bf-4c09-8973-8f8899cb113a&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&width=1420&userId=&cache=v2))
 
 <aside>
 💡
@@ -39,7 +39,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 인피니티 스크롤을 적용, 백엔드 코드 연결 예정
 
-![스크린샷 2024-11-03 오전 7.59.23.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/6c2fd286-a5c4-4b73-bf2f-41681daf39c2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.59.23.png)
+![스크린샷 2024-11-03 오전 7.59.23.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/6c2fd286-a5c4-4b73-bf2f-41681daf39c2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.59.23.png](https://chill-cookie-52f.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2F69a690f0-e322-4cb7-bc8e-34437670bfab%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-11-03_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_7.58.37.png?table=block&id=76717544-f963-440f-9ee9-af24fa9da44e&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&width=1420&userId=&cache=v2)![image](https://github.com/user-attachments/assets/db08d81b-1ace-4b22-bbb6-6e5010a9caee)
+)
 
 <aside>
 💡
@@ -54,7 +55,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 # BE
 
-![diagram.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/f1bc219c-037d-4fa5-80b2-e98a5fb8d12a/diagram.png)
+![diagram.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/f1bc219c-037d-4fa5-80b2-e98a5fb8d12a/diagram.png](https://chill-cookie-52f.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2Ff1bc219c-037d-4fa5-80b2-e98a5fb8d12a%2Fdiagram.png?table=block&id=eea5feac-ea39-47eb-8af1-bb579ab7f8e3&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&width=480&userId=&cache=v2)![image](https://github.com/user-attachments/assets/661dc9da-c7ff-4956-9e32-5d90316c20f0)
+)
 
 # users
 
@@ -146,11 +148,12 @@ private String jwt;
 
 # 유니티
 
-![스크린샷 2024-11-03 오전 8.02.02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/8a88f4fb-672b-49f1-adb2-2234cd20d27b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_8.02.02.png)
+![스크린샷 2024-11-03 오전 8.02.02.png]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/8a88f4fb-672b-49f1-adb2-2234cd20d27b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_8.02.02.png](https://chill-cookie-52f.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2F8a88f4fb-672b-49f1-adb2-2234cd20d27b%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-11-03_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_8.02.02.png?table=block&id=bdc2787f-c1db-4792-8409-500df8a169fc&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&width=1420&userId=&cache=v2)![image](https://github.com/user-attachments/assets/8f4521f7-5aa4-47ed-8427-39f09b1c7e42)
+)
 
 제작 진행중
 
-[KakaoTalk_Video_2024-11-03-08-01-34.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/268bb3ef-0930-48c9-b3e3-9fb03574f293/KakaoTalk_Video_2024-11-03-08-01-34.mp4)
+[KakaoTalk_Video_2024-11-03-08-01-34.mp4]([https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/268bb3ef-0930-48c9-b3e3-9fb03574f293/KakaoTalk_Video_2024-11-03-08-01-34.mp4](https://file.notion.so/f/f/08820807-0fa7-42c4-bc95-7d349a6c2119/268bb3ef-0930-48c9-b3e3-9fb03574f293/KakaoTalk_Video_2024-11-03-08-01-34.mp4?table=block&id=44aca4fe-5f93-42b7-8bda-dcb0a33975ab&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&expirationTimestamp=1730678400000&signature=NJKV1-hAm_xmpuQLmJJo2TZkWZICmyNVsYMfqEzvF7g))
 
 ---
 
