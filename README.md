@@ -4,7 +4,8 @@
 
 Next Js에서 TS,AppRouter,Tailwind를 기반으로 제작
 
-![스크린샷 2024-11-03 오전 7.56.39.png]([[https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/1a708873-65a1-4981-8772-2c95104a20de/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png](https://file.notion.so/f/f/08820807-0fa7-42c4-bc95-7d349a6c2119/1a708873-65a1-4981-8772-2c95104a20de/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png?table=block&id=292be3d2-45b2-4aef-804d-26417ee6c852&spaceId=08820807-0fa7-42c4-bc95-7d349a6c2119&expirationTimestamp=1730678400000&signature=3-NlTsWZM5RENJNos1o8yHsjZ-EGn7Lgz2gkhsXyXNQ&downloadName=%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2024-11-03+%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB+7.56.39.png)](https://img.notionusercontent.com/s3/prod-files-secure%2F08820807-0fa7-42c4-bc95-7d349a6c2119%2F1a708873-65a1-4981-8772-2c95104a20de%2F%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.56.39.png/size/w=1420?exp=1730675513&sig=FEl9d80rUE7kAgAfkQbD1KLoVgz1mTp0X4ktVahnO3c))
+![스크린샷 2024-11-03 오전 8 17 39](https://github.com/user-attachments/assets/119d5ed0-e25b-410c-b2fe-82f5fd39b03f)
+
 
 <aside>
 💡
@@ -17,7 +18,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 추후 더 개발하여 모델링과, 상호 작용 등 디자인 개선과 기능 추가 예정
 
-![스크린샷 2024-11-03 오전 7.58.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/9a1da675-7de8-465a-8dfc-c0ba7a0558d0/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.58.11.png)
+![스크린샷 2024-11-03 오전 8 17 51](https://github.com/user-attachments/assets/08951bfa-2c51-496e-9854-150c38fa7684)
+
 
 <aside>
 💡
@@ -28,7 +30,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 추후 유니티 연동 예정
 
-![스크린샷 2024-11-03 오전 7.58.37.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/69a690f0-e322-4cb7-bc8e-34437670bfab/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.58.37.png)
+![스크린샷 2024-11-03 오전 8 18 11](https://github.com/user-attachments/assets/0f611121-4f5d-491e-9424-0a67d2753fbd)
+
 
 <aside>
 💡
@@ -39,7 +42,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 인피니티 스크롤을 적용, 백엔드 코드 연결 예정
 
-![스크린샷 2024-11-03 오전 7.59.23.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/6c2fd286-a5c4-4b73-bf2f-41681daf39c2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_7.59.23.png)
+![스크린샷 2024-11-03 오전 8 18 30](https://github.com/user-attachments/assets/cbb3abbb-9978-4aeb-b75c-745fe11ecec3)
+
 
 <aside>
 💡
@@ -54,7 +58,8 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 
 # BE
 
-![diagram.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/f1bc219c-037d-4fa5-80b2-e98a5fb8d12a/diagram.png)
+![스크린샷 2024-11-03 오전 8 18 45](https://github.com/user-attachments/assets/678c96ff-b974-430b-a82c-b2f9b8312234)
+
 
 # users
 
@@ -118,7 +123,7 @@ Three를 사용해서 프로젝트의 컨셉인 게임기를 제작.
 |  | 최초 작성 날짜 | comment_created_at | timestamp |  | not null | now() |  |  |
 |  | 마지막 수정 날짜 | comment_updated_at | timestamp |  |  | now() |  |  |
 
-[제목 없음](https://www.notion.so/dc66f206070b43bb8c548ee7723d7794?pvs=21)
+
 
 - 게시판 최신순 인기순 → BE vs FE (BE)
 - 소셜 로그인은 추후에
@@ -146,11 +151,16 @@ private String jwt;
 
 # 유니티
 
-![스크린샷 2024-11-03 오전 8.02.02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/8a88f4fb-672b-49f1-adb2-2234cd20d27b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-11-03_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_8.02.02.png)
+![스크린샷 2024-11-03 오전 8 19 01](https://github.com/user-attachments/assets/37cd4bb3-ebad-44eb-b209-8f38cb44eb07)
+
 
 제작 진행중
 
-[KakaoTalk_Video_2024-11-03-08-01-34.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/268bb3ef-0930-48c9-b3e3-9fb03574f293/KakaoTalk_Video_2024-11-03-08-01-34.mp4)
+
+
+https://github.com/user-attachments/assets/f2086f68-6093-4f23-a4f8-54366d59766b
+
+
 
 ---
 
@@ -404,7 +414,9 @@ Q learning은 모든 action space에 대해 탐색하며 결과적으로는 가�
 
 state와 action를 매핑시킨 $\mu$라는 함수를 만들어냄
 
-![다음과 같은 수식으로 업데이트](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/569dd72a-2ef6-4d78-b14b-e3baed9ed682/Untitled.png)
+
+![스크린샷 2024-11-03 오전 8 20 06](https://github.com/user-attachments/assets/3ae1d3bd-999c-4260-a75d-b31d4ce23e97)
+
 
 다음과 같은 수식으로 업데이트
 
@@ -420,7 +432,7 @@ DQN에서 유한한 크기의 캐시 메모리 R에 $(s_t,a_t,r_t,s_{t+1})$을 �
 
 DPG는 분포에서 action을 sampling하던 Stochastic과는 달리 action을 바로 골라낸다. 따라서 탐험을 하게 하는 방법으로 noise를 넣어주게 되었다. 논문에서는 OU noise를 사용하였다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/108b73b5-4182-461f-aa3b-c5df357e7074/Untitled.png)
+![스크린샷 2024-11-03 오전 8 19 45](https://github.com/user-attachments/assets/6e83f413-d9db-4a3a-aa9e-d52e8baf61d1)
 
 # Abstract
 
@@ -544,36 +556,36 @@ r : reward
 $\rho_0$ : 초기에 어느 상태에서 시작할지에 대한 확률분포
 
 $\gamma$ : 감가율
+![스크린샷 2024-11-03 오전 8 20 36](https://github.com/user-attachments/assets/972b513e-5963-4205-8321-8161cc0260ce)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/361873f3-8cb4-4087-a3cd-7f0ceddf8eab/Untitled.png)
 
 $\eta(\pi)$는 시작시점부터 종단시점까지의 리워드에 감가율을 곱해 더해준 것으로 해당 정책의 성능지표이다.
+![스크린샷 2024-11-03 오전 8 20 45](https://github.com/user-attachments/assets/8e5b0623-03ec-4f9a-b540-2c0f6490cb58)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/bb37e368-d1bf-4f74-9e7b-63458b8870ff/Untitled.png)
 
 $Q_\pi(s_t,a_t)$, $V_\pi(s_t)$는 해당 시점(t) 이후 취할 수 있는 보상의 가중합이다.
 $A_\pi(s,a)$는 미래 액션의 가치에서 현 상태의 보상 추정값을 빼어 줌으로써 해당 액션의 가치를 추정할 수 있다.
+![스크린샷 2024-11-03 오전 8 20 55](https://github.com/user-attachments/assets/a6dbf69c-cb06-49ea-b7e7-8bf1d347f029)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/cd858df1-4776-479f-895c-8f1cb0ffb943/Untitled.png)
 
 $\eta(\tilde\pi)$ 는 업데이트 된 정책  $\tilde\pi$를 이전 정책 $\pi$를 이용해 가치를 얻어낸다. 샘플링은 업데이트 된 정책에서 하고,
 
 가치는 이전 정책에 대해서 매기게 되면 이것이 곧 $\eta(\tilde\pi)$ 가 되었다.
+![스크린샷 2024-11-03 오전 8 21 04](https://github.com/user-attachments/assets/92cc3e00-b931-49cd-97a0-c25233887587)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/dab378af-d42a-4af9-aa50-992cc3d0deff/Untitled.png)
 
 $\rho_0$는 시작지점을 어디로 잡을지에 대한 확률분포였다. 
 $\rho_\pi(s)$는 정책$\pi$를 따를 때 s라는 state에 몇번째 차례에 방문할지를 나타내는 확률분포이다.
+![스크린샷 2024-11-03 오전 8 21 15](https://github.com/user-attachments/assets/c8cd91ef-cba9-42f7-9ec2-ead7fe148a44)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/952a718c-e0d2-4889-acb2-7393e67246cd/Untitled.png)
 
 앞서 나온 $\eta(\tilde\pi)$ 수식에서 기대값(E)를 푼 수식이다. state에서 a를 골랐을 때 A의 기대값이기에 이를 풀어주면 각 state에 도달할 확률과 해당 state에서 정책에 따라 action을 고를 확률이 또 곱해져야한다. 이를 수식으로 보이면 위 식과 같이 된다.
 
 강화학습의 목표는 성능이 향상되는 수식에 따라 정책을 업데이트함으로써 최적의 정책($\pi^*)$을 뽑아내는 것이다. 하지만 마지막 수식을 보게되면 $\rho_{\tilde\pi}(s)$ > 0 이고, $\tilde\pi(a|s)$도 확률이기에 0보다 크다.
 
 결론적으로 $A_\pi(s,a)$가 ≥ 0 이면 어느 한 쌍의 action-state쌍만 향상되더라도 해당 정책은 성능 향상이 보장된다.(쇠퇴하지 않는다.)
+![스크린샷 2024-11-03 오전 8 21 24](https://github.com/user-attachments/assets/0bc4b786-378f-45f5-99f3-458a6a07399b)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/0af0dec6-ce38-4de0-a2f7-eb32880d27a3/Untitled.png)
 
 $$
 1)\sum_s\rho_{\tilde\pi(s)}\sum\tilde\pi(a|s)A_\pi(s,a)
@@ -591,47 +603,13 @@ gym 환경의 frozen lake 게임을 생각해보자. 에이전트에게 시킨 a
 그렇기에 정책을 $\pi$로 바꿔준, 2번째 수식이 등장하였다.
 
 이런 차이때문에 두 공식을  $\eta(\tilde\pi)$, $L_\pi(\tilde\pi)$라고 표기한다.
+![스크린샷 2024-11-03 오전 8 21 38](https://github.com/user-attachments/assets/7dd93eca-1666-4f76-ae19-68b48bbe609d)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/8113b7d3-0e87-4c78-acf7-8a63193e0978/Untitled.png)
-
-파라미터화 시킨 초기의 정책 $\pi$하 L과 $\eta$는 동일하다. 또한 파라미터화가 되었기에 미분이 가능해진다.
-그래서 위 수식은 성립한다.
-
-작은 스텝사이즈로 최적화를 하게 되면 정책이 향상됨을 앞선 과정에 따라 보일 수 있다. 하지만 스텝사이즈가 커진다면 어떻게 될까?
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/0ba97447-f26c-465f-b43a-a0f06b321378/c5ff3976-59d1-4483-bab9-267329d5069d.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/3b59dee6-17c4-4d9d-b34b-80beb71f04d0/c463a0c5-bc88-475f-9bc6-f19ff368252c.png)
-
-큰 스텝 사이즈의 최적화를 이렇게 일정 비율($\alpha$)만큼만 업데이트하게 반영시켜 작은 스텝사이즈로 업데이트 하는 것과 유사한 효과를 내게 한 수식이다.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/78137396-c96b-43d3-97cd-2043d3918750/463d98cd-cde1-4258-9d33-fc67532bb0e0.png)
-
-다음과 같은 lower bound를 갖는다고 한다.
 
 # Monotonic Improvement Guarantee for General Stochastic Policies
+![스크린샷 2024-11-03 오전 8 21 58](https://github.com/user-attachments/assets/d12c6234-cc70-4d30-8fed-1b761686520f)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/c4a7d609-05da-4f57-b95b-9e895230e99c/Untitled.png)
 
-![두 정책에 의해 샘플링된 확률중 가장 큰 차이 → 정책간의 가장 큰 차이](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/d7546830-56fa-4613-9918-c50ef4f9e51d/Untitled.png)
-
-두 정책에 의해 샘플링된 확률중 가장 큰 차이 → 정책간의 가장 큰 차이
-
-두 정책간에 얼마만큼 차이가 있는지(성능이 향상되었는지) 확인할 수 있는 지표로 total variation divergence를 보여주었다. 
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/e38ae4af-d874-4155-a321-e2deeae2cf80/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/f09d2340-8ca0-4586-9e3a-faafe67c00b8/Untitled.png)
-
-이를 이용하면 앞서 나온 lower bound를 다음과 같은 식으로 변경할 수 있다.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/854b4157-14da-4718-aa10-ee214d689145/af913f15-6ff6-4e86-a960-8f265a43fae9.png)
-
-KL divergence 와 TV divergence는 다음과 같은 공식이 성립한다.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/9ca0b0f2-045f-4b13-868b-febc461758e0/Untitled.png)
-
-앞선 부등식을 적용시키고, 상수를 C로 묶어주게 되면 결론적으로 다음 식이 나온다.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/a7be3b4c-0ec7-43cb-89b9-28167287a97e/Untitled.png)
 
@@ -640,47 +618,9 @@ $M(\pi_i)$는 다음과 같이 정이되었다.
 정책이 향상됨을 가정하게 되면 아래 부등식이 성립하게 된다.
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/9ed2b7eb-fdcb-4b6a-99cc-379702db6b10/Untitled.png)
-
-그러면 $M(\pi_i)$(panelty term을 포함하는 성능지표)가 극대화되면 $\eta$는 감소하지 않는다.
-
-> 결론적으로 다음 알고리즘이 정의된다.
-> 
-> 
-> ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/765f3424-5535-4234-9710-8861a85de67f/Untitled.png)
-> 
+![스크린샷 2024-11-03 오전 8 22 19](https://github.com/user-attachments/assets/b2afda69-92d5-45ad-88f5-c051407c0d36)
 
 # Optimization of Parameterized Policies
 
-본 섹션에서는 TRPO (Trust Reston Policy Optimization)을 소개한다. 
+![스크린샷 2024-11-03 오전 8 22 33](https://github.com/user-attachments/assets/635bd77c-e2e3-4bca-b0c9-93717944a10d)
 
-큰 규모의 업데이트에도 로버스트한 성질을 띄게 하려고 패널티항 보다는 KL divergence 제약조건을 넣었다.
-
-최적화문제는 다음과 같이 정의된다.
-
-![제약조건으로 표현한 최적화문제](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/e3524f7f-7fc9-4273-80f5-f1021a53c9ed/Untitled.png)
-
-제약조건으로 표현한 최적화문제
-
-![panelty term을 이용한 최적화문제 정의](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/d579b577-5684-4adf-b8d8-540d814b9476/Untitled.png)
-
-panelty term을 이용한 최적화문제 정의
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/1421cd09-5d98-4081-a630-600c795ea1e0/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/68c3b8ec-4872-4097-9a7b-a190636303e9/Untitled.png)
-
-$\rho_{\theta_{old}}$에서 각 state에 도달할 확률 * (각 정책 하에서 해당 state에서 가능한 action을 뽑아낼 확률값의 차) ≤ $\delta$일 때 L을 최대로하는 $\theta$를 구하는게 목표
-
-수식을 풀어쓰면 다음과 같다.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/9ad33d44-738c-40d7-860d-455dd28dd5d0/Untitled.png)
-
-해당 수식에 따라 업데이트 된 정책이 $\theta$인데, 업데이트를 하기 전에 $\theta$에서 액션을 샘플링을 하는 것은 불가능하다. 따라서 해당 수식을 업데이트 전 정책에서 업데이트할 수 있게 바꿔야하고, 여기서 Importance sampling이 사용된다.
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/a2ab2e1f-f149-4caa-956d-754cfb2ff775/Untitled.png)
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/08820807-0fa7-42c4-bc95-7d349a6c2119/fd31fe6d-7893-4429-b252-cded47c66ba8/Untitled.png)
-
-위 수식이 최종적인 TRPO 최적화 수식이 되겠다.
-
-$A_\theta{_{old}}=Q_\theta{_{old}}(s,a)-V_\theta{_{old}}(s)$이고, 이때 $V_\theta{_{old}}$는 action의 영향을 받지않기에 기대값 내에서 상수로 취급된다. 상수텀은 함수의 수렴에 영향을 주지 않기에 제거해주면 (14)가 된다. (상수텀은 유무 관계없이 동일 함수로 수렴하게 된다.)
